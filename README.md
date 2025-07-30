@@ -14,24 +14,7 @@ Detector de **URLs de phishing** usando **Machine Learning (Random Forest)** int
 
 ---
 
-## 📂 Estructura del Proyecto
-
-phishing-detector-ai/
-│
-├── app.py              # Servidor Flask (rutas y APIs)
-├── ml_model.py         # Entrenamiento y predicción con Random Forest
-├── url_analyzer.py     # Extracción de características de las URLs
-├── db.py               # Conexión y operaciones en SQLite
-├── templates/
-│   └── index.html      # Dashboard principal
-├── data/
-│   └── model.pkl       # Modelo entrenado (se genera tras entrenar)
-├── requirements.txt    # Dependencias del proyecto
-└── README.md           # Documentación del proyecto
-
----
-
-##🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 	•	Python 3
 	•	Flask
 	•	scikit-learn
