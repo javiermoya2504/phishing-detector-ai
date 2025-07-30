@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Phish Detector AI",
+    "version": "1.0",
+    "description": "Detector de sitios de phishing en tiempo real",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Phish Detector AI"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}

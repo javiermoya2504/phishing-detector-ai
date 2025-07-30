@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phish Detector AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛡️ Phish Detector AI</h1>
+            <p>Detector de sitios de phishing en tiempo real</p>
+        </header>
+
+        <main>
+            <!-- Analizador de URL -->
+            <section class="analyzer">
+                <h2>Analizar URL</h2>
+                <div class="input-group">
+                    <input type="url" id="urlInput" placeholder="Ingresa la URL a analizar...">
+                    <button onclick="analyzeURL()">Analizar</button>
+                </div>
+                
+                <div id="result" class="result hidden"></div>
+            </section>
+
+            <!-- Estadísticas -->
+            <section class="stats">
+                <h2>Estadísticas</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 id="totalScans">-</h3>
+                        <p>URLs Analizadas</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="phishingDetected">-</h3>
+                        <p>Phishing Detectado</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="legitimateUrls">-</h3>
+                        <p>URLs Legítimas</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="avgRiskScore">-</h3>
+                        <p>Riesgo Promedio</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Análisis Recientes -->
+            <section class="recent">
+                <h2>Análisis Recientes</h2>
+                <div id="recentScans" class="recent-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
