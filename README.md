@@ -40,15 +40,10 @@ python -c "from ml_model import PhishingDetector; detector = PhishingDetector();
 ```
 
 Salida esperada (ejemplo):
-
 Creando datos de entrenamiento...
-
 Dividiendo datos en entrenamiento y prueba...
-
 Entrenando modelo...
-
 Evaluando modelo...
-
 Precisión del modelo: 1.00
 
 ⚠️ Nota: La precisión es 1.00 porque el dataset inicial es pequeño y simulado.
